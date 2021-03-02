@@ -75,7 +75,7 @@ const { othermenu } require('./database/menu/othermenu')*/
 /******LOAD OF VCARD INPUT******/
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Nazwa🖤\n' // full name
+            + 'FN:NazwaðŸ–¤\n' // full name
             + 'ORG:Owner Bot;\n' // the organization of the contact
             + 'TEL;type=CELL;type=VOICE;waid=5548988062654:+55 48988062654\n' // WhatsApp ID + phone number
             + 'END:VCARD'
@@ -195,7 +195,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Oii @${num.split('@')[0]}\ Seja bem vindo (a) ao grupo, leia as regras na descrição💖🙃, *${mdata.subject}*`
+				teks = `Oii @${num.split('@')[0]}\ Seja bem vindo (a) ao grupo, leia as regras na descriÃ§Ã£oðŸ’–ðŸ™ƒ, *${mdata.subject}*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -205,7 +205,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Adeus, @${num.split('@')[0]} você não vai fazer falta aqui ghost fdp🤬👋`
+				teks = `Adeus, @${num.split('@')[0]} vocÃª nÃ£o vai fazer falta aqui ghost fdpðŸ¤¬ðŸ‘‹`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -243,27 +243,27 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '⌛ Tá processando, calma ai🤬🇧🇼⌛',
-				success: '✔️ Sucesso ✔️',
-                                levelon: '❬ ✔ ❭ *permitir o nivelamento*', 
-				leveloff: ' ❬ X ❭  *desabilitar nivelamento*',
-				levelnoton: '❬ X ❭ *a nota de nivelamento não está ativa*',
-				levelnol: '*NÍVEL DE IRMÃO AINDA * 0 °-°',
+				wait: 'âŒ› TÃ¡ processando, calma aiðŸ¤¬ðŸ‡§ðŸ‡¼âŒ›',
+				success: 'âœ”ï¸ Sucesso âœ”ï¸',
+                                levelon: 'â¬ âœ” â­ *permitir o nivelamento*', 
+				leveloff: ' â¬ X â­  *desabilitar nivelamento*',
+				levelnoton: 'â¬ X â­ *a nota de nivelamento nÃ£o estÃ¡ ativa*',
+				levelnol: '*NÃVEL DE IRMÃƒO AINDA * 0 Â°-Â°',
 				error: {
-					stick: '[❗] Falha, ocorreu um erro ao converter a imagem em um adesivo ❌',
-					Iv: '❌ Link invalido ❌'
+					stick: '[â—] Falha, ocorreu um erro ao converter a imagem em um adesivo âŒ',
+					Iv: 'âŒ Link invalido âŒ'
 				},
 				only: {
-					group: '[❗] Comando pode ser usado apenas nos grupos! ❌',
-					ownerG: '[❗] Este comando só pode ser usado pelo grupo proprietário! ❌',
-					ownerB: '[❗] Este comando só pode ser usado pelo proprietário do bot! ❌',
-					admin: '[❗]KKK MEMBRO COMUM TENTANDO USAR COMANDO DE ADEMAR🤡🇧🇼',
-					Badmin: '[❗] O BOT PRECISA SER ADM DO GRUPOA❌',
-                                        daftarB: `──「 Registre-se 」──\nOla mano !\nVoce não está registrado no banco de dados, \n\nComando : ${prefix}daftar nama|umur\nDigite : .daftar nama|Bardokill ${prefix}`,
+					group: '[â—] Comando pode ser usado apenas nos grupos! âŒ',
+					ownerG: '[â—] Este comando sÃ³ pode ser usado pelo grupo proprietÃ¡rio! âŒ',
+					ownerB: '[â—] Este comando sÃ³ pode ser usado pelo proprietÃ¡rio do bot! âŒ',
+					admin: '[â—]KKK MEMBRO COMUM TENTANDO USAR COMANDO DE ADEMARðŸ¤¡ðŸ‡§ðŸ‡¼',
+					Badmin: '[â—] O BOT PRECISA SER ADM DO GRUPOAâŒ',
+                                        daftarB: `â”€â”€ã€Œ Registre-se ã€â”€â”€\nOla mano !\nVoce nÃ£o estÃ¡ registrado no banco de dados, \n\nComando : ${prefix}daftar nama|umur\nDigite : .daftar nama|Bardokill ${prefix}`,
 				}
 			}
-    			const apakah = ['Sim não']
-        		const bisakah = ['Sim, você não pode']
+    			const apakah = ['Sim nÃ£o']
+        		const bisakah = ['Sim, vocÃª nÃ£o pode']
 		        const kapankah =  ['Dias de atraso ',' Mais domingo ',' Mais meses ',' Mais anos']
 			const botNumber = client.user.jid
 			const ownerNumber = ["5548991635455@s.whatsapp.net"] // replace this with your number
@@ -314,7 +314,7 @@ async function starts() {
                 addLevelingXp(sender, amountXp)
                 if (requiredXp <= getLevelingXp(sender)) {
                     addLevelingLevel(sender, 1)
-                    await reply(`*「  SUBIU DE NÍVEL 」*\n\n➸ *Nome*: ${sender}\n➸ *XP*: ${getLevelingXp(sender)}\n➸ *NIVEL*: ${getLevel} -> ${getLevelingLevel(sender)}\n\N PARABÉNS! 🎉🎉`)
+                    await reply(`*ã€Œ  SUBIU DE NÃVEL ã€*\n\nâž¸ *Nome*: ${sender}\nâž¸ *XP*: ${getLevelingXp(sender)}\nâž¸ *NIVEL*: ${getLevel} -> ${getLevelingLevel(sender)}\n\N PARABÃ‰NS! ðŸŽ‰ðŸŽ‰`)
                 }
             } catch (err) {
                 console.error(err)
@@ -368,13 +368,13 @@ case 'timer':
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `Comando recebido, administrador de grupo rebaixado para membro comum🐒 :\n`
+							teks += `Comando recebido, administrador de grupo rebaixado para membro comumðŸ’ :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					} else {
-						mentions(`KKK ISSO QUE DÁ QUANDO MAMA OS ADM ERRADO AGORA É MEMBRO COMUM @${mentioned[0].split('@')[0]}\n 🐒 _*${groupMetadata.subject}*_`, mentioned, true)
+						mentions(`KKK ISSO QUE DÃ QUANDO MAMA OS ADM ERRADO AGORA Ã‰ MEMBRO COMUM @${mentioned[0].split('@')[0]}\n ðŸ’ _*${groupMetadata.subject}*_`, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					}
 					break
@@ -403,14 +403,14 @@ case 'timer':
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di promote!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Removido com sucesso🐒 :\n'
+						teks = 'Removido com sucessoðŸ’ :\n'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
 						}
 						mentions(teks, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
 					} else {
-						mentions(`Sem escândalo fml esse mamou os adm pra deixar de ser membro comum😂🤙: @${mentioned[0].split('@')[0]}`, mentioned, true)
+						mentions(`Sem escÃ¢ndalo fml esse mamou os adm pra deixar de ser membro comumðŸ˜‚ðŸ¤™: @${mentioned[0].split('@')[0]}`, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
 					}
 					break
@@ -418,7 +418,7 @@ case 'timer':
 				  case 'wame':
   client.updatePresence(from, Presence.composing) 
       options = {
-          text: `「 *AUTO WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}\n\nSeu do link WhatsApp : *https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n*Or ( / )*\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*`,
+          text: `ã€Œ *AUTO WHATSAPP* ã€\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}\n\nSeu do link WhatsApp : *https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n*Or ( / )*\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*`,
           contextInfo: { mentionedJid: [sender] }
     }
     client.sendMessage(from, options, text, { quoted: mek } )
@@ -430,7 +430,7 @@ case 'timer':
 				client.updatePresence(from, Presence.composing) 
                                 if (!isUser) return reply(mess.only.daftarB)
 				data = await fetchJson(`http://mhankbarbars.herokuapp.com/api/randomquotes`)
-				ez = `*➸ Autor :* ${data.author}\n*➸ citações:* ${data.quotes}`
+				ez = `*âž¸ Autor :* ${data.author}\n*âž¸ citaÃ§Ãµes:* ${data.quotes}`
 				reply(ez)
 				break
 				case '3dtext':
@@ -517,7 +517,7 @@ case 'timer':
                 data = await fetchJson(`https://docs-jojo.herokuapp.com/api/infonomor?no=${body.slice(11)}`)
                 if (data.error) return reply(data.error)
                 if (data.result) return reply(data.result)
-                hasil = `╠➥ internasional : ${data.international}\n╠➥ nomor : ${data.nomor}\n╠➥ operator : ${data.op}`
+                hasil = `â• âž¥ internasional : ${data.international}\nâ• âž¥ nomor : ${data.nomor}\nâ• âž¥ operator : ${data.op}`
                 reply(hasil)
                 break
 		case 'spamcall':
@@ -562,7 +562,7 @@ case 'timer':
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://mhankbarbar.tech/api/yta?url=${args[0]}&apiKey=${BarBarKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `❏ *Titulo* : ${anu.title}\n❏ *Tamanho* : ${anu.filesize}\n\nEspere Um Pouco Mano, Audio Esta Sendo Enviado Novamente...`
+					teks = `â *Titulo* : ${anu.title}\nâ *Tamanho* : ${anu.filesize}\n\nEspere Um Pouco Mano, Audio Esta Sendo Enviado Novamente...`
 					thumb = await getBuffer(anu.thumb)
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
@@ -573,7 +573,7 @@ case 'timer':
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://st4rz.herokuapp.com/api/ytv2?url=${args[0]}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `*❏ Titulo* : ${anu.title}\n\n*O VIDEO ESTA ENVIANDO, NAO ENVIE SPAM PAI*`
+					teks = `*â Titulo* : ${anu.title}\n\n*O VIDEO ESTA ENVIANDO, NAO ENVIE SPAM PAI*`
 					thumb = await getBuffer(anu.thumb)
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
@@ -650,12 +650,12 @@ case 'timer':
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nome do bot* : ${me.name}\n*Número do Bot* : @${me.jid.split('@')[0]}\n*Prefixo* : ${prefix}\n*Total de contatos bloqueados* : ${blocked.length}\n*O bot está ativo desde* : ${kyun(uptime)}\n*Total de conversas* : ${totalchat.length}`
+					teks = `*Nome do bot* : ${me.name}\n*NÃºmero do Bot* : @${me.jid.split('@')[0]}\n*Prefixo* : ${prefix}\n*Total de contatos bloqueados* : ${blocked.length}\n*O bot estÃ¡ ativo desde* : ${kyun(uptime)}\n*Total de conversas* : ${totalchat.length}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
 				case 'blocklist':
-					teks = 'Esta é a lista de números bloqueados :\n'
+					teks = 'Esta Ã© a lista de nÃºmeros bloqueados :\n'
 					for (let block of blocked) {
 						teks += `~> @${block.split('@')[0]}\n`
 					}
@@ -712,7 +712,7 @@ case 'timer':
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					dtt.length > 600
-					? reply('A maior parte do texto � tio')
+					? reply('A maior parte do texto ï¿½ tio')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
@@ -795,10 +795,10 @@ case 'timer':
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
-						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
+						teks += `â• âž¥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mencione Tudo 〙✪══\n╠➥'+teks+'╚═〘 - - - - 〙', members_id, true)
+					mentions('â•”â•â•âœªã€˜ Mencione Tudo ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ - - - - ã€™', members_id, true)
 					break
                 case 'tagall2':
 				client.updatePresence(from, Presence.composing) 
@@ -808,10 +808,10 @@ case 'timer':
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
-						teks += `╠➥ ${mem.jid.split('@')[0]}\n`
+						teks += `â• âž¥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencione Tudo 〙✪══\n╠➥'+teks+'╚═〘 - - - - 〙', text, {quoted: mek})
+					client.sendMessage(from, 'â•”â•â•âœªã€˜ Mencione Tudo ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ - - - - ã€™', text, {quoted: mek})
 					break
                 case 'tagall3':
 				client.updatePresence(from, Presence.composing) 
@@ -821,10 +821,10 @@ case 'timer':
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
-						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
+						teks += `â• âž¥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencione Tudo 〙✪══\n╠➥'+teks+'╚═〘 - - - - - 〙', text, {detectLinks: false, quoted: mek})
+					client.sendMessage(from, 'â•”â•â•âœªã€˜ Mencione Tudo ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ - - - - - ã€™', text, {detectLinks: false, quoted: mek})
 					break
                         case 'tagall4':
 				client.updatePresence(from, Presence.composing) 
@@ -834,10 +834,10 @@ case 'timer':
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
-						teks += `╠➥ ${mem.jid.split('@')[0]}@c.us\n`
+						teks += `â• âž¥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencione Tudo 〙✪══\n╠➥'+teks+'╚═〘 - - - - - 〙', text, {quoted: mek})
+					client.sendMessage(from, 'â•”â•â•âœªã€˜ Mencione Tudo ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ - - - - - ã€™', text, {quoted: mek})
 					break
                 case 'tagall5':
 				client.updatePresence(from, Presence.composing) 
@@ -847,10 +847,10 @@ case 'timer':
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
-						teks += `╠➥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
+						teks += `â• âž¥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
 					}
-					reply('╔══✪〘 Mencione Tudo 〙✪══\n╠➥'+teks+'╚═〘 - - - - - 〙')
+					reply('â•”â•â•âœªã€˜ Mencione Tudo ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ - - - - - ã€™')
 					break
 				case 'send':
 					var pc = body.slice(6)
@@ -870,7 +870,7 @@ case 'timer':
 					enmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(enmedia)
 					await client.updateProfilePicture(botNumber, media)
-					reply('Obrigado pelo novo perfil😗')
+					reply('Obrigado pelo novo perfilðŸ˜—')
 					break
 				case 'bc':
 					client.updatePresence(from, Presence.composing) 
@@ -881,14 +881,14 @@ case 'timer':
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							client.sendMessage(_.jid, buff, image, {caption: `*「 BROADCAST 」*\n\n${body.slice(4)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `*ã€Œ BROADCAST ã€*\n\n${body.slice(4)}`})
 						}
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 TRANSMISSÃO 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*ã€Œ TRANSMISSÃƒO ã€*\n\n${body.slice(4)}`)
 						}
-						reply('Transmissão feita com sucesso🤡🇧🇼')
+						reply('TransmissÃ£o feita com sucessoðŸ¤¡ðŸ‡§ðŸ‡¼')
 					}
 					break
 					case 'bcgc':
@@ -899,14 +899,14 @@ case 'timer':
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of groupMembers) {
-							client.sendMessage(_.jid, buff, image, {caption: `*「 BC GROUP 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `*ã€Œ BC GROUP ã€*\n*Group* : ${groupName}\n\n${body.slice(6)}`})
 						}
 						reply('')
 					} else {
 						for (let _ of groupMembers) {
-							sendMess(_.jid, `*「 BC GROUP 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`)
+							sendMess(_.jid, `*ã€Œ BC GROUP ã€*\n*Group* : ${groupName}\n\n${body.slice(6)}`)
 						}
-						reply('Grupo de transmissão de sucesso')
+						reply('Grupo de transmissÃ£o de sucesso')
 					}
 					break
 				case 'alay':
@@ -942,12 +942,12 @@ case 'timer':
 					}, 2000)
                      setTimeout( () => {
 					client.updatePresence(from, Presence.composing) 
-					client.sendMessage(from, 'Adeus👋', text) // ur cods
+					client.sendMessage(from, 'AdeusðŸ‘‹', text) // ur cods
 					}, 0)
                      break
 
 				case 'chord':
-					if (args.length < 1) return reply('o título da canção onde kak')
+					if (args.length < 1) return reply('o tÃ­tulo da canÃ§Ã£o onde kak')
                                         if (!isUser) return reply(mess.only.daftarB)
 					tels = body.slice(7)					
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/chord?q=${tels}`, {method: 'get'})
@@ -970,7 +970,7 @@ case 'timer':
 				  case 'ownergroup':
                client.updatePresence(from, Presence.composing) 
               options = {
-          text: `O dono do grupo é:  @${from.split("-")[0]}`,
+          text: `O dono do grupo Ã©:  @${from.split("-")[0]}`,
           contextInfo: { mentionedJid: [from] }
            }
            client.sendMessage(from, options, text, { quoted: mek } )
@@ -998,8 +998,8 @@ case 'timer':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply('Quem vc deseja adicionar🧐??')
-					if (args[0].startsWith('08')) return reply('Use o codigo do país anta🙄')
+					if (args.length < 1) return reply('Quem vc deseja adicionarðŸ§??')
+					if (args[0].startsWith('08')) return reply('Use o codigo do paÃ­s antaðŸ™„')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						client.groupAdd(from, [num])
@@ -1017,7 +1017,7 @@ case 'timer':
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Removi esse satanas com sucesso🐒 :\n'
+						teks = 'Removi esse satanas com sucessoðŸ’ :\n'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
 						}
@@ -1026,7 +1026,7 @@ case 'timer':
 					} else {
 						mentions(`Pedido recebido, vaza daqui diabo  : @${mentioned[0].split('@')[0]}`, mentioned, true)
 						client.groupRemove(from, mentioned)
-					client.sendMessage(mentioned, 'yahaha Lu kekick😂', text)
+					client.sendMessage(mentioned, 'yahaha Lu kekickðŸ˜‚', text)
 					}
 					break
 				case 'exe':
@@ -1185,7 +1185,7 @@ case 'timer':
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`❌ Falhou, no momento da conversao ${tipe} ke stiker`)
+								reply(`âŒ Falhou, no momento da conversao ${tipe} ke stiker`)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -1217,14 +1217,14 @@ case 'timer':
 				case 'toimg':
 				    client.updatePresence(from, Presence.composing)
                                     if (!isUser) return reply(mess.only.daftarB)
-					if (!isQuotedSticker) return reply('❌ adesivo de resposta um ❌')
+					if (!isQuotedSticker) return reply('âŒ adesivo de resposta um âŒ')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.png')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('❌ Falha ao converter adesivos em imagens ❌')
+						if (err) return reply('âŒ Falha ao converter adesivos em imagens âŒ')
 						buffer = fs.readFileSync(ran)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: '>//<'})
 						fs.unlinkSync(ran)
@@ -1233,14 +1233,14 @@ case 'timer':
                 	case 'tomp3':
                 	client.updatePresence(from, Presence.composing) 
                         if (!isUser) return reply(mess.only.daftarB)
-					if (!isQuotedVideo) return reply('❌ responda o video um ❌')
+					if (!isQuotedVideo) return reply('âŒ responda o video um âŒ')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp4')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('❌ Falha ao converter video para mp3 ❌')
+						if (err) return reply('âŒ Falha ao converter video para mp3 âŒ')
 						buffer = fs.readFileSync(ran)
 						client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', quoted: mek})
 						fs.unlinkSync(ran)
@@ -1282,16 +1282,16 @@ case 'timer':
 					anu = await fetchJson(`http://rt-files.000webhostapp.com/tts.php?apikey=rasitech`, {method: 'get'})
                                         if (!isUser) return reply(mess.only.daftarB)
 					setTimeout( () => {
-					client.sendMessage(from, '*➸ Jawaban :* '+anu.result.jawaban+'\n'+anu.result.desk, text, {quoted: mek}) // ur cods
+					client.sendMessage(from, '*âž¸ Jawaban :* '+anu.result.jawaban+'\n'+anu.result.desk, text, {quoted: mek}) // ur cods
 					}, 30000) // 1000 = 1s,
 					setTimeout( () => {
-					client.sendMessage(from, '_10 Detik lagi…_', text) // ur cods
+					client.sendMessage(from, '_10 Detik lagiâ€¦_', text) // ur cods
 					}, 20000) // 1000 = 1s,
 					setTimeout( () => {
-					client.sendMessage(from, '_20 Detik lagi_…', text) // ur cods
+					client.sendMessage(from, '_20 Detik lagi_â€¦', text) // ur cods
 					}, 10000) // 1000 = 1s,
 					setTimeout( () => {
-					client.sendMessage(from, '_30 Detik lagi_…', text) // ur cods
+					client.sendMessage(from, '_30 Detik lagi_â€¦', text) // ur cods
 					}, 1000) // 1000 = 1s,
 					setTimeout( () => {
 					client.sendMessage(from, anu.result.soal, text, { quoted: mek }) // ur cods
@@ -1306,7 +1306,7 @@ case 'timer':
 					var umure = reg.split("|")[1];
 						user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `\`\`\`O  LISTA  foi bem sucedido com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usu�rios ${user.length}\`\`\``, text, {quoted: mek})
+						client.sendMessage(from, `\`\`\`O  LISTA  foi bem sucedido com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuï¿½rios ${user.length}\`\`\``, text, {quoted: mek})
 					break
                                 case 'welcome':
 					if (!isGroup) return reply(mess.only.group)
@@ -1317,11 +1317,11 @@ case 'timer':
 						if (isWelkom) return reply('o recurso esta ativo')
 						welkom.push(from)
 						fs.writeFileSync('./database/json/welkom.json', JSON.stringify(welkom))
-						reply('❬ SUCESSO ❭ ative o recurso de boas-vindas neste grupo')
+						reply('â¬ SUCESSO â­ ative o recurso de boas-vindas neste grupo')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, disable)
 						fs.writeFileSync('./database/json/welkom.json', JSON.stringify(welkom))
-						reply('❬ SUCESSO ❭ desative o recurso de boas-vindas neste grupo')
+						reply('â¬ SUCESSO â­ desative o recurso de boas-vindas neste grupo')
 					} else {
 						reply('digite 1 para ativar, 0 para desativar o recurso')
 					}
@@ -1383,14 +1383,14 @@ case 'timer':
 					break
                                 case 'nsfwneko':
 				    try{
-						if (!isNsfw) return reply('❌ *NSFW ESTÁ DESLIGADO* ❌')
+						if (!isNsfw) return reply('âŒ *NSFW ESTÃ DESLIGADO* âŒ')
                                                 if (!isUser) return reply(mess.only.daftarB)
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=BotWeA`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'mesum'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ *ERRO* ❌')
+						reply('âŒ *ERRO* âŒ')
 					}
 					break
                                 case 'shota':
@@ -1401,7 +1401,7 @@ case 'timer':
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nich'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ *ERRO* ❌')
+						reply('âŒ *ERRO* âŒ')
 					}
 					break
 				case 'logowolf':
@@ -1419,14 +1419,14 @@ case 'timer':
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('digite 1 para ativar')
 					if (Number(args[0]) === 1) {
-						if (isNsfw) return reply('o recurso está ativo')
+						if (isNsfw) return reply('o recurso estÃ¡ ativo')
 						nsfw.push(from)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
-						reply('❬ SUCESSO ❭ ative o recurso nsfw neste grupo')
+						reply('â¬ SUCESSO â­ ative o recurso nsfw neste grupo')
 					} else if (Number(args[0]) === 0) {
 						nsfw.splice(from, 1)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
-						reply('❬ SUCESSO ❭ desabilite o recurso nsfw neste grupo')
+						reply('â¬ SUCESSO â­ desabilite o recurso nsfw neste grupo')
 					} else {
 						reply('digite 1 para ativar, 0 para desativar o recurso')
 					}
@@ -1508,7 +1508,7 @@ case 'timer':
 					client.sendMessage(from, truteh, image, { caption: '*Truth*\n\n'+ ttrth, quoted: mek })
 					break
                                 case 'dare':
-					const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "ðŸ¦„ðŸ’¨" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
+					const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "Ã°Å¸Â¦â€žÃ°Å¸â€™Â¨" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
 					const der = dare[Math.floor(Math.random() * dare.length)]
 					tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 					client.sendMessage(from, tod, image, { quoted: mek, caption: '*Dare*\n\n'+ der })
@@ -1520,7 +1520,7 @@ case 'timer':
                 const userXp = getLevelingXp(sender)
                 if (userLevel === undefined && userXp === undefined) return reply(mess.levelnol)
                 sem = sender.replace('@s.whatsapp.net','')
-                resul = `◪ *LEVEL*\n  ├─ ❏ *Nome* : ${sem}\n  ├─ ❏ *Usuario XP* : ${userXp}\n  └─ ❏ *Level do usuario* : ${userLevel}`
+                resul = `â—ª *LEVEL*\n  â”œâ”€ â *Nome* : ${sem}\n  â”œâ”€ â *Usuario XP* : ${userXp}\n  â””â”€ â *Level do usuario* : ${userLevel}`
                client.sendMessage(from, resul, text, { quoted: mek})
                 .catch(async (err) => {
                         console.error(err)
@@ -1562,14 +1562,14 @@ case 'timer':
                                         break
                                 case 'nsfwtrap':
                                         try{
-                                                if (!isNsfw) return reply('❌ *NSFW DESATIVADO* ❌')
+                                                if (!isNsfw) return reply('âŒ *NSFW DESATIVADO* âŒ')
                                                 if (!isUser) return reply(mess.only.daftarB)
                                                 res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=BotWeA`, {method: 'get'})
                                                 buffer = await getBuffer(res.result)
                                                 client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Aqui esta a foto.'})
                                         } catch (e) {
                                                 console.log(`*Error* :`, color(e,'red'))
-                                                reply('❌ *ERROR* ❌')
+                                                reply('âŒ *ERROR* âŒ')
                                         }
                                         break
                                 case 'ping':
@@ -1643,7 +1643,7 @@ case 'timer':
                                         reply(mess.wait)
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=shadow&text=${text1}&apikey=BotWeA`, {method: 'get'})
                                         buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Aqui está 😂🇧🇼'})
+                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Aqui estÃ¡ ðŸ˜‚ðŸ‡§ðŸ‡¼'})
                                         break
                                 case 'burnpaper':
                                         var gh = body.slice(10)
@@ -1653,7 +1653,7 @@ case 'timer':
                                         reply(mess.wait)
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=burn_paper&text=${teks1}&apikey=BotWeA`, {method: 'get'})
                                         buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Aqui está😂🇧🇼'})
+                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Aqui estÃ¡ðŸ˜‚ðŸ‡§ðŸ‡¼'})
                                         break
                                 case 'coffee':
                                         var gh = body.slice(7)
@@ -1688,7 +1688,7 @@ case 'timer':
                                 case 'qowheart':
                                         var gh = body.slice(9)
                                         var teks1 = gh.split("|")[0];
-                                        if (args.length < 1) return reply('onde est� o texto hum\nExemplos: ${prefix}qowheart lorde')
+                                        if (args.length < 1) return reply('onde estï¿½ o texto hum\nExemplos: ${prefix}qowheart lorde')
                                         if (!isUser) return reply(mess.only.daftarB)
                                         reply(mess.wait)
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=quote_on_wood_heart&text=${teks1}&apikey=BotWeA`, {method: 'get'})
@@ -1797,7 +1797,7 @@ case 'timer':
 if (text.includes("ip"))
   { const aris = text.replace(/!ip /, "") 
   axios.get(`https://mnazria.herokuapp.com/api/check?ip=${aris}`).then((res) =>{ 
-  let hasil = ` *CONSULTA REALIZADA* \n\n  *CIDADE:*  ${res.data.city}\n  *Latitude* : ${res.data.latitude}\n  *Longtitude* : ${res.data.longitude}\n  *REGI�O* : ${res.data.region_name}\n  *UF* : ${res.data.region_code}\n  *IP* : ${res.data.ip}\n  *TIPO* : ${res.data.type}\n  *CEP* : ${res.data.zip}\n  *LOCALIDADE* : ${res.data.location.geoname_id}\n  *CAPITAL* : ${res.data.location.capital}\n  *DDD* : ${res.data.location.calling_code}\n  *PA�S* : ${res.data.location.country_flag_emoji}\n *BY:May Bot*` 
+  let hasil = ` *CONSULTA REALIZADA* \n\n  *CIDADE:*  ${res.data.city}\n  *Latitude* : ${res.data.latitude}\n  *Longtitude* : ${res.data.longitude}\n  *REGIÃO* : ${res.data.region_name}\n  *UF* : ${res.data.region_code}\n  *IP* : ${res.data.ip}\n  *TIPO* : ${res.data.type}\n  *CEP* : ${res.data.zip}\n  *LOCALIDADE* : ${res.data.location.geoname_id}\n  *CAPITAL* : ${res.data.location.capital}\n  *DDD* : ${res.data.location.calling_code}\n  *PAÍS* : ${res.data.location.country_flag_emoji}\n *BY:May Bot*` 
   conn.sendMessage(id, hasil, MessageType.text); 
  })
  }
@@ -1817,22 +1817,22 @@ if (text.includes("cnpj")){
 const aris = text.replace(/!cnpj /, "")
 axios.get(`https://www.receitaws.com.br/v1/cnpj/${aris}`).then((res) => {
 	conn.sendMessage(id, '[] ESPERE ESTOU BUSCANDO DADOS', MessageType.text)
-         let cep = `*CONSULTA REALIZADA* \n\n  *ATIVIDADE PRINCIPAL:* ${res.data.atividade_principal[0].text} \n\n  *DATA SITUA��O:* ${res.data.data_situacao}\n\n  *TIPO:* ${res.data.tipo} \n\n  *NOME:* ${res.data.nome} \n\n  *UF:* ${res.data.uf} \n\n  *TELEFONE:* ${res.data.telefone}\n\n  *SITUA��O:* ${res.data.situacao} \n\n  *BAIRRO:* ${res.data.bairro} \n\n  *RUA:* ${res.data.logradouro} \n\n  *N�MERO :* ${res.data.numero} \n\n  *CEP :* ${res.data.cep} \n\n  *MUNIC�PIO:* ${res.data.municipio} \n\n  *PORTE:* ${res.data.porte}\n\n  *ABERTURA:* ${res.data.abertura}\n\n  *NATUREZA JUR�DICA:* ${res.data.natureza_juridica} \n\n  *FANTASIA:* ${res.data.fantasia}\n\n  *CNPJ:* ${res.data.cnpj}\n\n  *�LTIMA ATUALIZA��O:* ${res.data.ultima_atualizacao}\n\n  *STATUS:* ${res.data.status}\n\n  *COMPLEMENTO:* ${res.data.complemento}\n\n  *EMAIL:* ${res.data.email}\n\n *BY:Joao* `;
+         let cep = `*CONSULTA REALIZADA* \n\n  *ATIVIDADE PRINCIPAL:* ${res.data.atividade_principal[0].text} \n\n  *DATA SITUAÇÃO:* ${res.data.data_situacao}\n\n  *TIPO:* ${res.data.tipo} \n\n  *NOME:* ${res.data.nome} \n\n  *UF:* ${res.data.uf} \n\n  *TELEFONE:* ${res.data.telefone}\n\n  *SITUAÇÃO:* ${res.data.situacao} \n\n  *BAIRRO:* ${res.data.bairro} \n\n  *RUA:* ${res.data.logradouro} \n\n  *NÚMERO :* ${res.data.numero} \n\n  *CEP :* ${res.data.cep} \n\n  *MUNICÍPIO:* ${res.data.municipio} \n\n  *PORTE:* ${res.data.porte}\n\n  *ABERTURA:* ${res.data.abertura}\n\n  *NATUREZA JURÍDICA:* ${res.data.natureza_juridica} \n\n  *FANTASIA:* ${res.data.fantasia}\n\n  *CNPJ:* ${res.data.cnpj}\n\n  *ÚLTIMA ATUALIZAÇÃO:* ${res.data.ultima_atualizacao}\n\n  *STATUS:* ${res.data.status}\n\n  *COMPLEMENTO:* ${res.data.complemento}\n\n  *EMAIL:* ${res.data.email}\n\n *BY:Joao* `;
     conn.sendMessage(id, cep ,MessageType.text);
 }) 
 }
 
 if (text.includes("cpf")){
-const aris = text.replace(/!cpf /, "")
+const aris = text.replace(/.cpf /, "")
 axios.get(`http://geradorapp.com/api/v1/cpf/generate?token=${aris}`).then((res) => {
 	conn.sendMessage(id, '[] ESPERE ESTOU BUSCANDO DADOS', MessageType.text)
-         let ecpf = `*CONSULTA REALIZADA* \n\n  *CPF:* ${res.data.CPF} \n\n  *NOME:* ${res.data.Nome}\n\n  *M�E:* ${res.data.NomeMae} \n\n  *NASCIMENTO:* ${res.data.DataNascimento} \n\n  *RUA:* ${res.data.Rua} \n\n  *N�:* ${res.data.NumeroRua}\n\n  *COMPLEMENTO:* ${res.data.Complemento}\n\n  *BAIRRO:* ${res.data.Bairro}\n\n  *CEP:* ${res.data.CEP}\n\n  *UF:* ${res.data.EstadoSigla}\n\n  *CIDADE:* ${res.data.Cidade}\n\n  *ESTADO:* ${res.data.Estado}\n\n  *PAIS:* ${res.data.Pais}  \n\n *BY:Joaot* `;
+         let ecpf = `*CONSULTA REALIZADA* \n\n  *CPF:* ${res.data.CPF} \n\n  *NOME:* ${res.data.Nome}\n\n  *MÃE:* ${res.data.NomeMae} \n\n  *NASCIMENTO:* ${res.data.DataNascimento} \n\n  *RUA:* ${res.data.Rua} \n\n  *N°:* ${res.data.NumeroRua}\n\n  *COMPLEMENTO:* ${res.data.Complemento}\n\n  *BAIRRO:* ${res.data.Bairro}\n\n  *CEP:* ${res.data.CEP}\n\n  *UF:* ${res.data.EstadoSigla}\n\n  *CIDADE:* ${res.data.Cidade}\n\n  *ESTADO:* ${res.data.Estado}\n\n  *PAIS:* ${res.data.Pais}  \n\n *BY:Joaot* `;
     conn.sendMessage(id, ecpf ,MessageType.text);
 }) 
 }
 
 if (text.includes("geradorcpf")){
-const aris = text.replace(/!geradorcpf/, "")
+const aris = text.replace(/.geradorcpf/, "")
 axios.get(`http://geradorapp.com/api/v1/cpf/generate?token=40849779ec68f8351995def08ff1e2fa`).then((res) => {
 	conn.sendMessage(id, '[] ESPERE ESTA PROCESSANDO', MessageType.text)
          let cpf = `*CPF GERADOS* \n\n  *CPF:* ${res.data.data.number}  \n\n *BY:Joao*`;
@@ -1841,17 +1841,17 @@ axios.get(`http://geradorapp.com/api/v1/cpf/generate?token=40849779ec68f8351995d
 }	
 
 if (text.includes("cep")){
-const aris = text.replace(/!cep /, "")
+const aris = text.replace(/.cep /, "")
 axios.get(`https://viacep.com.br/ws/${aris}/json/`).then((res) => {
 	conn.sendMessage(id, '[] ESPERE ESTOU BUSCANDO DADOS', MessageType.text)
-         let cep = `*CONSULTA REALIZADA* \n\n  *CEP:* ${res.data.cep} \n\n  *ENDERE�O:* ${res.data.logradouro}\n\n  *COMPLEMENTO:* ${res.data.complemento} \n\n  *BAIRRO:* ${res.data.bairro} \n\n  *LOCALIDADE:* ${res.data.localidade} \n\n  *UF:* ${res.data.uf}\n\n  *DDD:* ${res.data.ddd} \n\n *BY:Joao* `;
+         let cep = `*CONSULTA REALIZADA* \n\n  *CEP:* ${res.data.cep} \n\n  *ENDEREÇO:* ${res.data.logradouro}\n\n  *COMPLEMENTO:* ${res.data.complemento} \n\n  *BAIRRO:* ${res.data.bairro} \n\n  *LOCALIDADE:* ${res.data.localidade} \n\n  *UF:* ${res.data.uf}\n\n  *DDD:* ${res.data.ddd} \n\n *BY:Joao* `;
     conn.sendMessage(id, cep ,MessageType.text);
 }) 
 }
 
 
 if (text.includes("placa"))
-  { const aris = text.replace(/!placa /, "") 
+  { const aris = text.replace(/.placa /, "") 
   axios.get(`https://apicarros.com/v1/consulta/${aris}/json`).then((res) =>{ 
   let hasil = ` *CONSULTA REALIZADA* \n\n  *ANO:*  ${res.data.ano}\n  *ANO MODELO* : ${res.data.anoModelo}\n  *CHASSI* : ${res.data.chassi}\n  *CODIGO RETORNO* : ${res.data.codigoRetorno}\n  *CODIGO SITUACAO* : ${res.data.codigoSituacao}\n  *COR* : ${res.data.cor}\n  *MARCA* : ${res.data.marca}\n  *MUNICIPIO* : ${res.data.municipio}\n  *SITUACAO* : ${res.data.situacao}\n  *UF* : ${res.data.uf}\n *BY:Joao*` 
   conn.sendMessage(id, hasil, MessageType.text); 
@@ -1882,11 +1882,11 @@ if (text.includes("placa"))
 						if (isSimi) return reply('Mode simi sudah aktif')
 						samih.push(from)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Ativar o modo simi com sucesso ✔️')
+						reply('Ativar o modo simi com sucesso âœ”ï¸')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Desativando o modo simi com sucesso ✔️')
+						reply('Desativando o modo simi com sucesso âœ”ï¸')
 					} else {
 						reply('1 para ativar, 0 para desativar')
 					}
@@ -1894,7 +1894,7 @@ if (text.includes("placa"))
 				case 'clone':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Marque o alvo que voc� deseja clonar')
+					if (args.length < 1) return reply('Marque o alvo que vocï¿½ deseja clonar')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
 					let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
@@ -1912,7 +1912,7 @@ if (text.includes("placa"))
                                         var teks7 = gh.split("|")[0];
                                         var teks2 = gh.split("|")[1];
                                         var teks3 = gh.split("|")[2];
-                                        if (args.length < 1) return reply('texto, nome, qual classe � mano?\nContoh: ${prefix}magernulis teks|nama|kelas\nContoh pemakaian: ${prefix}magernulis NazwaCanss|Nazwa|10C')
+                                        if (args.length < 1) return reply('texto, nome, qual classe ï¿½ mano?\nContoh: ${prefix}magernulis teks|nama|kelas\nContoh pemakaian: ${prefix}magernulis NazwaCanss|Nazwa|10C')
                                         if (!isUser) return reply(mess.only.daftarB)
                                         anu = await fetchJson(`http://api-melodicxt.herokuapp.com/api/joki-nulis?text=${teks7}&nama=${teks2}&kelas=${teks3}&apiKey=administrator`, {method: 'get'})
                                         buffer = await getBuffer(anu.result.result)
@@ -1922,11 +1922,11 @@ if (text.includes("placa"))
                                         var gh = body.slice(9)
                                         var teks1 = gh.split("|")[0];
                                         var teks2 = gh.split("|")[1];
-                                        if (args.length < 1) return reply('onde está o texto? \ nExemplos: ${prefix}pubglogo Nazwa|Canss')
+                                        if (args.length < 1) return reply('onde estÃ¡ o texto? \ nExemplos: ${prefix}pubglogo Nazwa|Canss')
                                         if (!isUser) return reply(mess.only.daftarB)
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=pubg&text1=${teks1}&text2=${teks2}&apikey=BotWeA`, {method: 'get'})
                                         buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Aqui está o logotipo...'})
+                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Aqui estÃ¡ o logotipo...'})
                                         break
                                 case 'herrypotter':
                                 case 'harrypotter':
@@ -1935,7 +1935,7 @@ if (text.includes("placa"))
                                         if (!isUser) return reply(mess.only.daftarB)
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=harry_potter&text=${gh}&apikey=BotWeA`, {method: 'get'})
                                         buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Aqui está 😂🇧🇼'})
+                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Aqui estÃ¡ ðŸ˜‚ðŸ‡§ðŸ‡¼'})
                                         break
 			 	case 'wait':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
